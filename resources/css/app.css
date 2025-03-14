@@ -1,0 +1,27 @@
+/* <!--====== Bootstrap css ======--> */
+@import '../../public/assets/css/bootstrap.min.css';
+/* <!--====== Slick Slider ======--> */
+@import '../../public/assets/css/slick.min.css';
+/* <!--====== Magnific ======--> */
+@import '../../public/assets/css/magnific-popup.min.css';
+/* <!--====== Nice Select ======--> */
+@import '../../public/assets/css/nice-select.min.css';
+/* <!--====== Animate CSS ======--> */
+@import '../../public/assets/css/animate.min.css';
+/* <!--====== Font Awesome ======--> */
+@import '../../public/assets/fonts/fontawesome/css/all.min.css';
+/* <!--====== Flaticon ======--> */
+@import '../../public/assets/fonts/flaticon/flaticon.css';
+/* <!--====== Spacing Css ======--> */
+@import '../../public/assets/css/spacing.min.css';
+/* <!--====== Main Css ======--> */
+@import '../../public/assets/css/style.css';
+/* <!--====== Responsive CSS ======--> */
+@import '../../public/assets/css/responsive.css';
+
+html {
+    scroll-behavior: smooth;
+}
+.collapse {
+    visibility: visible !important;
+}
