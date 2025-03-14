@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to [Your Company Name]!</title>
+  <title>Welcome to Our Newsletter!</title>
   <style>
     /* Reset CSS */
     body, html {
@@ -133,31 +133,37 @@
   <div class="email-container">
     <!-- Header Section -->
     <div class="header">
-      <img src="https://res.cloudinary.com/dcbantk1f/image/upload/v1741927569/Screenshot_20-removebg-preview_tmftvs.png">
-      <h1>Welcome to [Your Company Name]!</h1>
+      <img src="https://via.placeholder.com/80" alt="Your Company Logo">
+      <h1>Welcome to Our Newsletter!</h1>
     </div>
 
     <!-- Body Section -->
     <div class="body-content">
       <div class="icon">
-        <img src="https://img.icons8.com/color/96/000000/welcome.png" alt="Welcome Icon">
+        <img src="https://img.icons8.com/color/96/000000/newsletter.png" alt="Newsletter Icon">
       </div>
-      <h2>Hello, {{ $name }}!</h2>
-      <p>Thank you for registering with <strong>[Your Company Name]</strong>. We're thrilled to have you on board!</p>
-      <p>Your account has been successfully created, and you can now access all the features and benefits of our platform.</p>
-      <p>To get started, click the button below to log in to your account:</p>
+      <h2>Thank You for Subscribing!</h2>
+      <p>Hello {{ $name }},</p>
+      <p>We're thrilled to have you join our community! By subscribing to our newsletter, you'll receive the latest updates, exclusive content, and special offers directly in your inbox.</p>
+      <p>Here’s what you can expect:</p>
+      <ul>
+        <li>📰 Weekly updates on [Your Industry/Topic]</li>
+        <li>🎁 Exclusive discounts and promotions</li>
+        <li>💡 Tips, insights, and expert advice</li>
+      </ul>
+      <p>If you ever have any questions or feedback, feel free to reply to this email. We'd love to hear from you!</p>
+      <p>Stay tuned for our first newsletter. In the meantime, check out our website to explore more:</p>
       <p style="text-align: center;">
-        <a href="[Login URL]" class="cta-button">Log In to Your Account</a>
+        <a href="[Your Website URL]" class="cta-button">Visit Our Website</a>
       </p>
-      <p>If you have any questions or need assistance, feel free to contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
-      <p>Welcome aboard, and we look forward to serving you!</p>
+      <p>Thank you for being part of our journey!</p>
       <p>Best regards,</p>
       <p><strong>The [Your Company Name] Team</strong></p>
     </div>
 
     <!-- Footer Section -->
     <div class="footer">
-      <p>You received this email because you registered an account with [Your Company Name]. If this wasn't you, please <a href="mailto:support@yourcompany.com">contact us</a>.</p>
+      <p>You received this email because you subscribed to our newsletter. If you no longer wish to receive these emails, <a href="[Unsubscribe URL]">unsubscribe here</a>.</p>
       <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
     </div>
   </div>

@@ -14,8 +14,8 @@ const Header2 = () => {
                         <div className="brand-logo">
                             <Link href="/">
                                 <a>
-                                    <img src="assets/img/logo-white-2.png" alt="logo" className="main-logo" />
-                                    <img src="assets/img/logo-4.png" alt="logo" className="sticky-logo" />
+                                    <img src="assets/img/logo_x.png" alt="logo" className="main-logo" width={250} />
+                                    <img src="assets/img/logo_x.png" alt="logo" className="sticky-logo" width={250} />
                                 </a>
                             </Link>
                         </div>

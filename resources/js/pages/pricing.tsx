@@ -3,6 +3,8 @@ import AccordionV1 from '../src/components/AccordionV1';
 import Counter from '../src/components/Counter';
 import Subscribe from '../src/components/Subscribe';
 import Layouts from '../src/layouts/Layouts';
+import FaqSection from '@/components/shared/faqSection';
+import NewsletterSection from '@/components/shared/newsletterSection';
 const PricingPage = () => {
     return (
         <Layouts pageTitle="Pricing Plan" noHeader={undefined} noFooter={undefined} children={undefined}>
@@ -10,7 +12,7 @@ const PricingPage = () => {
             {/* <!--====== End Pricing Section ======--> */}
 
             {/* <!--====== Start Counter Section ======--> */}
-            <section className="counter-section counter-section-bordered">
+            <section className="counter-section counter-section-bordered mb-5">
                 <div className="container-fluid container-1420">
                     <div className="counter-section-inner">
                         <div className="row counter-items-v2">
@@ -65,31 +67,11 @@ const PricingPage = () => {
             {/* <!--====== End Counter Section ======--> */}
 
             {/* <!--====== Start FAQ section ======--> */}
-            <section className="faq-section p-t-130 p-b-130">
-                <div className="container">
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-lg-6 col-md-10">
-                            <div className="faq-content p-r-60 p-r-lg-30 p-r-md-0">
-                                <div className="common-heading tagline-boxed m-b-30">
-                                    <span className="tagline">Asked Question</span>
-                                    <h2 className="title">
-                                        Frequently Asked <br /> Questions
-                                    </h2>
-                                </div>
-                                <div className="landio-accordion-v1 accordion-bordered">
-                                    <AccordionV1 />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-9">
-                            <div className="faq-image text-lg-right m-t-md-60">
-                                <img src="assets/img/faq/faq-image-2.png" alt="faq image" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <Subscribe />
+            <FaqSection/>
+            <div className='mt-5'>
+
+            <NewsletterSection />
+            </div>
         </Layouts>
     );
 };

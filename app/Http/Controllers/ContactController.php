@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewsletterMail;
 use App\Models\Contact;
 use App\Models\Newsletter;
 use Illuminate\Http\Request;
@@ -45,6 +46,7 @@ class ContactController extends Controller
             } else {
                 // Update status to true
                 $newsletter->update(['status' => true]);
+                Mail::to($request->email)->send(new NewsletterMail($request->email));
                 return response()->json(['message' => 'Newsletter subscription activated'], 200);
             }
         } else {
@@ -53,6 +55,7 @@ class ContactController extends Controller
                 'email' => $request->email,
                 'status' => true,
             ]);
+            Mail::to($request->email)->send(new NewsletterMail($request->email));
             return response()->json(['message' => 'Email added to the newsletter'], 200);
         }
     }

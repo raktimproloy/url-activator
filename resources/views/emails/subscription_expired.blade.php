@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to [Your Company Name]!</title>
+  <title>Your Subscription is About to Expire</title>
   <style>
     /* Reset CSS */
     body, html {
@@ -61,14 +61,42 @@
       margin-bottom: 20px;
     }
 
-    .body-content .icon {
-      text-align: center;
-      margin: 20px 0;
+    .body-content .subscription-details {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
     }
 
-    .body-content .icon img {
-      width: 80px;
-      height: auto;
+    .body-content .subscription-details h3 {
+      font-size: 18px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .body-content .subscription-details p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .body-content .available-plans {
+      margin-top: 20px;
+    }
+
+    .body-content .available-plans h3 {
+      font-size: 18px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .body-content .available-plans ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .body-content .available-plans ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
     }
 
     .body-content .cta-button {
@@ -133,31 +161,48 @@
   <div class="email-container">
     <!-- Header Section -->
     <div class="header">
-      <img src="https://res.cloudinary.com/dcbantk1f/image/upload/v1741927569/Screenshot_20-removebg-preview_tmftvs.png">
-      <h1>Welcome to [Your Company Name]!</h1>
+      <img src="https://via.placeholder.com/80" alt="Your Company Logo">
+      <h1>Your Subscription is About to Expire</h1>
     </div>
 
     <!-- Body Section -->
     <div class="body-content">
-      <div class="icon">
-        <img src="https://img.icons8.com/color/96/000000/welcome.png" alt="Welcome Icon">
-      </div>
       <h2>Hello, {{ $name }}!</h2>
-      <p>Thank you for registering with <strong>[Your Company Name]</strong>. We're thrilled to have you on board!</p>
-      <p>Your account has been successfully created, and you can now access all the features and benefits of our platform.</p>
-      <p>To get started, click the button below to log in to your account:</p>
-      <p style="text-align: center;">
-        <a href="[Login URL]" class="cta-button">Log In to Your Account</a>
-      </p>
+      <p>We wanted to let you know that your current subscription with <strong>[Your Company Name]</strong> is about to expire. Below are the details of your current subscription:</p>
+
+      <!-- Previous Subscription Details -->
+      <div class="subscription-details">
+        <h3>Current Subscription Details</h3>
+        <p><strong>Plan Name:</strong> {{ $currentPlanName }}</p>
+        <p><strong>Expiration Date:</strong> {{ $expirationDate }}</p>
+        <p><strong>Price:</strong> {{ $currentPrice }}</p>
+        <p><strong>Features:</strong> {{ $currentFeatures }}</p>
+      </div>
+
+      <!-- Available Subscription Plans -->
+      <div class="available-plans">
+        <h3>Available Subscription Plans</h3>
+        <p>Don't miss out on the benefits of your subscription! We offer a variety of plans to suit your needs:</p>
+        <ul>
+          <li><strong>Basic Plan:</strong> $9.99/month - Access to essential features.</li>
+          <li><strong>Pro Plan:</strong> $19.99/month - Advanced features and priority support.</li>
+          <li><strong>Premium Plan:</strong> $29.99/month - Full access to all features and exclusive perks.</li>
+        </ul>
+        <p>To renew your subscription or upgrade to a new plan, click the button below:</p>
+        <p style="text-align: center;">
+          <a href="[Pricing Page URL]" class="cta-button">View Plans & Pricing</a>
+        </p>
+      </div>
+
       <p>If you have any questions or need assistance, feel free to contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
-      <p>Welcome aboard, and we look forward to serving you!</p>
+      <p>Thank you for being a valued member of our community!</p>
       <p>Best regards,</p>
       <p><strong>The [Your Company Name] Team</strong></p>
     </div>
 
     <!-- Footer Section -->
     <div class="footer">
-      <p>You received this email because you registered an account with [Your Company Name]. If this wasn't you, please <a href="mailto:support@yourcompany.com">contact us</a>.</p>
+      <p>You received this email because your subscription with [Your Company Name] is about to expire. If you no longer wish to receive these emails, <a href="[Unsubscribe URL]">unsubscribe here</a>.</p>
       <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
     </div>
   </div>

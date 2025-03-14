@@ -12,7 +12,7 @@ const MobileMenu = ({ show, close }) => {
                 <div className="mobile-logo">
                     <Link href="/">
                         <a>
-                            <img src="assets/img/logo-1.png" alt="Landio" />
+                            <img src="assets/img/logo-1.png" alt="ReHostX" />
                         </a>
                     </Link>
                 </div>

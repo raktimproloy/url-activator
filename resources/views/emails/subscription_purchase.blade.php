@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to [Your Company Name]!</title>
+  <title>Subscription Purchase Confirmation</title>
   <style>
     /* Reset CSS */
     body, html {
@@ -61,14 +61,22 @@
       margin-bottom: 20px;
     }
 
-    .body-content .icon {
-      text-align: center;
-      margin: 20px 0;
+    .body-content .subscription-details {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
     }
 
-    .body-content .icon img {
-      width: 80px;
-      height: auto;
+    .body-content .subscription-details h3 {
+      font-size: 18px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .body-content .subscription-details p {
+      margin: 5px 0;
+      font-size: 14px;
     }
 
     .body-content .cta-button {
@@ -133,31 +141,41 @@
   <div class="email-container">
     <!-- Header Section -->
     <div class="header">
-      <img src="https://res.cloudinary.com/dcbantk1f/image/upload/v1741927569/Screenshot_20-removebg-preview_tmftvs.png">
-      <h1>Welcome to [Your Company Name]!</h1>
+      <img src="https://via.placeholder.com/80" alt="Your Company Logo">
+      <h1>Subscription Purchase Confirmation</h1>
     </div>
 
     <!-- Body Section -->
     <div class="body-content">
-      <div class="icon">
-        <img src="https://img.icons8.com/color/96/000000/welcome.png" alt="Welcome Icon">
-      </div>
       <h2>Hello, {{ $name }}!</h2>
-      <p>Thank you for registering with <strong>[Your Company Name]</strong>. We're thrilled to have you on board!</p>
-      <p>Your account has been successfully created, and you can now access all the features and benefits of our platform.</p>
-      <p>To get started, click the button below to log in to your account:</p>
+      <p>Thank you for purchasing a subscription with <strong>[Your Company Name]</strong>. Your payment has been successfully processed, and your subscription is now active.</p>
+
+      <!-- Subscription Details -->
+      <div class="subscription-details">
+        <h3>Subscription Details</h3>
+        <p><strong>Plan Name:</strong> {{ $planName }}</p>
+        <p><strong>Price:</strong> {{ $price }}</p>
+        <p><strong>Duration:</strong> {{ $duration }}</p>
+        <p><strong>Start Date:</strong> {{ $startDate }}</p>
+        <p><strong>End Date:</strong> {{ $endDate }}</p>
+        <p><strong>Payment Method:</strong> {{ $paymentMethod }}</p>
+        <p><strong>Transaction ID:</strong> {{ $transactionId }}</p>
+      </div>
+
+      <p>You can now enjoy all the benefits of your subscription. To access your account, click the button below:</p>
       <p style="text-align: center;">
-        <a href="[Login URL]" class="cta-button">Log In to Your Account</a>
+        <a href="[Dashboard URL]" class="cta-button">Go to Your Dashboard</a>
       </p>
+
       <p>If you have any questions or need assistance, feel free to contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
-      <p>Welcome aboard, and we look forward to serving you!</p>
+      <p>Thank you for choosing [Your Company Name]!</p>
       <p>Best regards,</p>
       <p><strong>The [Your Company Name] Team</strong></p>
     </div>
 
     <!-- Footer Section -->
     <div class="footer">
-      <p>You received this email because you registered an account with [Your Company Name]. If this wasn't you, please <a href="mailto:support@yourcompany.com">contact us</a>.</p>
+      <p>You received this email because you purchased a subscription with [Your Company Name]. If this wasn't you, please <a href="mailto:support@yourcompany.com">contact us</a>.</p>
       <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
     </div>
   </div>

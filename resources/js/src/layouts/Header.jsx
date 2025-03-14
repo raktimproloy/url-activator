@@ -18,7 +18,7 @@ const Header = () => {
                                 <div className="brand-logo">
                                     <Link href="/">
                                         <a>
-                                            <img src="assets/img/logo-1.png" alt="logo" />
+                                            <img src="assets/img/logo_x.png" alt="logo" width={250} />
                                         </a>
                                     </Link>
                                 </div>

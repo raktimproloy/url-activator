@@ -13,41 +13,41 @@ class SubscriptionPurchaseMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $name;
+    public $email;
+    public $package_title;
+    public $invoice_id;
+
     /**
      * Create a new message instance.
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
-     * Get the message envelope.
-     */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Subscription Purchase Mail',
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
      *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     * @param string $name
+     * @param string $email
+     * @param string $package_title
+     * @param string $invoice_id
      */
-    public function attachments(): array
+    public function __construct($name, $email, $package_title, $invoice_id)
     {
-        return [];
+        $this->name = $name;
+        $this->email = $email;
+        $this->package_title = $package_title;
+        $this->invoice_id = $invoice_id;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->subject('Thank You for Purchase Subscription')
+                    ->view('emails.subscription_purchase')
+                    ->with([
+                        'name' => $this->name,
+                        'email' => $this->email,
+                        'package_title' => $this->package_title,
+                        'invoice_id' => $this->invoice_id,
+                    ]);
     }
 }

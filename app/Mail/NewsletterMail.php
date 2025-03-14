@@ -13,41 +13,29 @@ class NewsletterMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $email;
+
     /**
      * Create a new message instance.
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
-     * Get the message envelope.
-     */
-    public function envelope(): Envelope
-    {
-        return new Envelope(
-            subject: 'Newsletter Mail',
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
      *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     * @param string $email
      */
-    public function attachments(): array
+    public function __construct($email)
     {
-        return [];
+        $this->email = $email;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->subject('Thank You for Contacting Us')
+                    ->view('emails.newsletter')
+                    ->with([
+                        'email' => $this->email,
+                    ]);
     }
 }

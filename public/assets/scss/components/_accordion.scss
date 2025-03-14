@@ -1,5 +1,5 @@
 /*======= Accordion v1 =======*/
-.landio-accordion-v1 {
+.ReHostX-accordion-v1 {
     .accordion-item {
         &:not(:last-child) {
             margin-bottom: 15px;
@@ -53,7 +53,7 @@
 }
 
 /*======= Accordion v1 Bordered =======*/
-.landio-accordion-v1.accordion-bordered {
+.ReHostX-accordion-v1.accordion-bordered {
     .accordion-item {
         border: 2px solid #edf2fd;
         border-radius: 7px;
@@ -85,7 +85,7 @@
 }
 
 /*======= Accordion v2 =======*/
-.landio-accordion-v2 {
+.ReHostX-accordion-v2 {
     .accordion-item {
         background-color: $color-white;
         box-shadow: 0px 10px 30px 0px rgba(0, 0, 2, 0.06);

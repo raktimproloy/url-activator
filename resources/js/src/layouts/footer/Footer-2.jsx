@@ -8,7 +8,7 @@ const Footer2 = ({ extraClass }) => {
                         {/* <!-- Single Footer Widget --> */}
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="widget text-block-widget">
-                                <h5 className="widget-title">About Landio</h5>
+                                <h5 className="widget-title">About ReHostX</h5>
                                 <p>Sed ut perspiciatis undmnis iste natus error sit voluptatem accusantium dolore udantiuy totam rem aperiam.</p>
 
                                 <ul className="social-links bordered-style m-t-20">
@@ -83,7 +83,7 @@ const Footer2 = ({ extraClass }) => {
                                     <ul>
                                         <li>
                                             <Link href="/about">
-                                                <a>About Landio</a>
+                                                <a>About ReHostX</a>
                                             </Link>
                                         </li>
                                         <li>
@@ -144,12 +144,12 @@ const Footer2 = ({ extraClass }) => {
                     <div className="row align-items-center justify-content-between">
                         <div className="col-sm-auto col-12">
                             <div className="copyright-logo text-sm-left text-center">
-                                <img src="assets/img/logo-white-2.png" alt="Landio" />
+                                <img src="assets/img/logo_x.png" alt="ReHostX" width={200} />
                             </div>
                         </div>
                         <div className="col-sm-auto col-12">
                             <p className="copyright-text text-sm-right pt-sm-0 pt-4 text-center">
-                                © 2021 <a href="#">Landio</a>. All Rights Reserved
+                                © 2021 <a href="#">ReHostX</a>. All Rights Reserved
                             </p>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
-    Template Name: Landio - Multipurpose Landing Page HTML Template
-    Template URI: https://webtend.net/demo/html/landio/
+    Template Name: ReHostX - Multipurpose Landing Page HTML Template
+    Template URI: https://webtend.net/demo/html/ReHostX/
     Author: WebTend
     Author URI:  https://webtend.net/
     Version: 1.3
@@ -91,7 +91,7 @@
         ##. Accordion
             ###. Accordion v1
             ###. Accordion v1 Bordered
-        ##. Landio Vidoe v1
+        ##. ReHostX Vidoe v1
         ##. Info Box
         ##. Brand Items
         ##. Latest News
@@ -6895,11 +6895,11 @@ textarea {
 }
 
 /*======= Accordion v1 =======*/
-.landio-accordion-v1 .accordion-item:not(:last-child) {
+.ReHostX-accordion-v1 .accordion-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.landio-accordion-v1 .accordion-item .accordion-header .accordion-button {
+.ReHostX-accordion-v1 .accordion-item .accordion-header .accordion-button {
   padding: 20px 30px;
   width: 100%;
   text-align: left;
@@ -6924,7 +6924,7 @@ textarea {
   color: var(--color-heading-2);
 }
 
-.landio-accordion-v1
+.ReHostX-accordion-v1
   .accordion-item
   .accordion-header
   .accordion-button::after {
@@ -6942,17 +6942,17 @@ textarea {
   font-weight: 600;
 }
 
-.landio-accordion-v1 .accordion-item .accordion-body {
+.ReHostX-accordion-v1 .accordion-item .accordion-body {
   background-color: var(--color-white);
   padding: 0 30px 25px;
   border-radius: 0 0 30px 30px;
 }
 
-.landio-accordion-v1 .accordion-item .accordion-button[aria-expanded="true"] {
+.ReHostX-accordion-v1 .accordion-item .accordion-button[aria-expanded="true"] {
   border-radius: 30px 30px 0 0;
 }
 
-.landio-accordion-v1
+.ReHostX-accordion-v1
   .accordion-item
   .accordion-button[aria-expanded="true"]::after {
   -webkit-transform: rotate(90deg);
@@ -6960,16 +6960,16 @@ textarea {
 }
 
 /*======= Accordion v1 Bordered =======*/
-.landio-accordion-v1.accordion-bordered .accordion-item {
+.ReHostX-accordion-v1.accordion-bordered .accordion-item {
   border: 2px solid #edf2fd;
   border-radius: 7px;
 }
 
-.landio-accordion-v1.accordion-bordered .accordion-item:not(:last-child) {
+.ReHostX-accordion-v1.accordion-bordered .accordion-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.landio-accordion-v1.accordion-bordered
+.ReHostX-accordion-v1.accordion-bordered
   .accordion-item
   .accordion-header
   .accordion-button {
@@ -6978,7 +6978,7 @@ textarea {
   line-height: 1.4;
 }
 
-.landio-accordion-v1.accordion-bordered
+.ReHostX-accordion-v1.accordion-bordered
   .accordion-item
   .accordion-header
   .accordion-button::after {
@@ -6986,11 +6986,11 @@ textarea {
   font-weight: 400;
 }
 
-.landio-accordion-v1.accordion-bordered .accordion-item .accordion-body {
+.ReHostX-accordion-v1.accordion-bordered .accordion-item .accordion-body {
   border-radius: 0;
 }
 
-.landio-accordion-v1.accordion-bordered
+.ReHostX-accordion-v1.accordion-bordered
   .accordion-item
   .accordion-button[aria-expanded="true"]::after {
   -webkit-transform: rotate(90deg);
@@ -6998,18 +6998,18 @@ textarea {
 }
 
 /*======= Accordion v2 =======*/
-.landio-accordion-v2 .accordion-item {
+.ReHostX-accordion-v2 .accordion-item {
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 2, 0.06);
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 2, 0.06);
   padding: 0px 35px;
 }
 
-.landio-accordion-v2 .accordion-item:not(:last-child) {
+.ReHostX-accordion-v2 .accordion-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.landio-accordion-v2 .accordion-item .accordion-header .accordion-button {
+.ReHostX-accordion-v2 .accordion-item .accordion-header .accordion-button {
   padding: 16px 0;
   width: 100%;
   background-color: transparent;
@@ -7033,7 +7033,7 @@ textarea {
   justify-content: flex-start;
 }
 
-.landio-accordion-v2
+.ReHostX-accordion-v2
   .accordion-item
   .accordion-header
   .accordion-button::before {
@@ -7059,11 +7059,11 @@ textarea {
   transition: 0.3s;
 }
 
-.landio-accordion-v2 .accordion-item .accordion-body {
+.ReHostX-accordion-v2 .accordion-item .accordion-body {
   padding: 0 0 25px 45px;
 }
 
-.landio-accordion-v2
+.ReHostX-accordion-v2
   .accordion-item
   .accordion-button[aria-expanded="true"]::before {
   -webkit-transform: rotate(90deg);
@@ -7103,8 +7103,8 @@ textarea {
   color: var(--color-white);
 }
 
-/*======= Landio Vidoe v1  =======*/
-.landio-video {
+/*======= ReHostX Vidoe v1  =======*/
+.ReHostX-video {
   position: relative;
   z-index: 3;
   height: 650px;
@@ -7123,7 +7123,7 @@ textarea {
   background-position: top center;
 }
 
-.landio-video .play-btn {
+.ReHostX-video .play-btn {
   z-index: 1;
   height: 80px;
   width: 80px;
@@ -7143,7 +7143,7 @@ textarea {
   z-index: 1;
 }
 
-.landio-video .play-btn::before {
+.ReHostX-video .play-btn::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -7158,17 +7158,17 @@ textarea {
   opacity: 0.15;
 }
 
-.landio-video .play-btn.color-heading-3,
-.landio-video .play-btn.color-heading-3::before {
+.ReHostX-video .play-btn.color-heading-3,
+.ReHostX-video .play-btn.color-heading-3::before {
   background-color: var(--color-heading-3);
 }
 
-.landio-video .play-btn.color-primary-7,
-.landio-video .play-btn.color-primary-7::before {
+.ReHostX-video .play-btn.color-primary-7,
+.ReHostX-video .play-btn.color-primary-7::before {
   background-color: var(--color-primary-7);
 }
 
-.landio-video::after {
+.ReHostX-video::after {
   position: absolute;
   content: "";
   height: 100%;
@@ -7923,23 +7923,23 @@ textarea {
   border-color: var(--color-white);
 }
 
-.video-cta .landio-video {
+.video-cta .ReHostX-video {
   min-height: 350px;
   height: 100%;
   border-radius: 7px;
 }
 
-.video-cta .landio-video .play-btn {
+.video-cta .ReHostX-video .play-btn {
   width: 75px;
   height: 75px;
   background-color: var(--color-primary-4);
 }
 
-.video-cta .landio-video .play-btn::before {
+.video-cta .ReHostX-video .play-btn::before {
   background-color: var(--color-primary-4);
 }
 
-.video-cta .landio-video::after {
+.video-cta .ReHostX-video::after {
   background-color: var(--color-secondary-4);
   opacity: 0.5;
 }
@@ -8447,7 +8447,7 @@ textarea {
   padding-bottom: 130px;
 }
 
-.testimonial-with-video .landio-video {
+.testimonial-with-video .ReHostX-video {
   margin-bottom: -245px;
 }
 

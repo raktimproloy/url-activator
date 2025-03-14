@@ -17,7 +17,7 @@ const Layouts = ({ noHeader, noFooter, pageTitle, children }) => {
         <Fragment>
             <Head>
                 <link rel="shortcut icon" href="assets/img/favicon.png" type="img/png" />
-                <title>Landio - Multipurpose Landing Page React Nextjs Template</title>
+                <title>ReHostX - Multipurpose Landing Page React Nextjs Template</title>
             </Head>
             {!noHeader && <Header />}
             {pageTitle && <Banner pageName={pageTitle} />}

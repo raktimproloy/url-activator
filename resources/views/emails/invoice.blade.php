@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to [Your Company Name]!</title>
+  <title>Subscription Purchase Confirmation</title>
   <style>
     /* Reset CSS */
     body, html {
@@ -61,28 +61,54 @@
       margin-bottom: 20px;
     }
 
-    .body-content .icon {
+    /* Invoice Section */
+    .invoice {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .invoice h3 {
+      font-size: 18px;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .invoice table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    .invoice table th,
+    .invoice table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .invoice table th {
+      background-color: #f1f1f1;
+    }
+
+    .invoice-buttons {
       text-align: center;
-      margin: 20px 0;
+      margin-top: 20px;
     }
 
-    .body-content .icon img {
-      width: 80px;
-      height: auto;
-    }
-
-    .body-content .cta-button {
+    .invoice-buttons .btn {
       display: inline-block;
       background-color: #007BFF;
       color: #ffffff;
       text-decoration: none;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border-radius: 5px;
-      font-size: 16px;
-      margin-top: 20px;
+      font-size: 14px;
+      margin: 0 5px;
     }
 
-    .body-content .cta-button:hover {
+    .invoice-buttons .btn:hover {
       background-color: #0056b3;
     }
 
@@ -126,6 +152,11 @@
       .header img {
         width: 60px;
       }
+
+      .invoice-buttons .btn {
+        display: block;
+        margin: 10px auto;
+      }
     }
   </style>
 </head>
@@ -133,31 +164,56 @@
   <div class="email-container">
     <!-- Header Section -->
     <div class="header">
-      <img src="https://res.cloudinary.com/dcbantk1f/image/upload/v1741927569/Screenshot_20-removebg-preview_tmftvs.png">
-      <h1>Welcome to [Your Company Name]!</h1>
+      <img src="https://via.placeholder.com/80" alt="Your Company Logo">
+      <h1>Subscription Purchase Confirmation</h1>
     </div>
 
     <!-- Body Section -->
     <div class="body-content">
-      <div class="icon">
-        <img src="https://img.icons8.com/color/96/000000/welcome.png" alt="Welcome Icon">
-      </div>
       <h2>Hello, {{ $name }}!</h2>
-      <p>Thank you for registering with <strong>[Your Company Name]</strong>. We're thrilled to have you on board!</p>
-      <p>Your account has been successfully created, and you can now access all the features and benefits of our platform.</p>
-      <p>To get started, click the button below to log in to your account:</p>
+      <p>Thank you for purchasing a subscription with <strong>[Your Company Name]</strong>. Your payment has been successfully processed, and your subscription is now active.</p>
+
+      <!-- Invoice Section -->
+      <div class="invoice">
+        <h3>Invoice Details</h3>
+        <table>
+          <tr>
+            <th>Description</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>{{ $planName }} ({{ $duration }})</td>
+            <td>{{ $price }}</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>{{ $tax }}</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>{{ $total }}</strong></td>
+          </tr>
+        </table>
+        <div class="invoice-buttons">
+          <a href="[Invoice Download URL]" class="btn">Download Invoice</a>
+          <a href="javascript:window.print()" class="btn">Print Invoice</a>
+        </div>
+      </div>
+
+      <p>You can now enjoy all the benefits of your subscription. To access your account, click the button below:</p>
       <p style="text-align: center;">
-        <a href="[Login URL]" class="cta-button">Log In to Your Account</a>
+        <a href="[Dashboard URL]" class="btn">Go to Your Dashboard</a>
       </p>
+
       <p>If you have any questions or need assistance, feel free to contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
-      <p>Welcome aboard, and we look forward to serving you!</p>
+      <p>Thank you for choosing [Your Company Name]!</p>
       <p>Best regards,</p>
       <p><strong>The [Your Company Name] Team</strong></p>
     </div>
 
     <!-- Footer Section -->
     <div class="footer">
-      <p>You received this email because you registered an account with [Your Company Name]. If this wasn't you, please <a href="mailto:support@yourcompany.com">contact us</a>.</p>
+      <p>You received this email because you purchased a subscription with [Your Company Name]. If this wasn't you, please <a href="mailto:support@yourcompany.com">contact us</a>.</p>
       <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
     </div>
   </div>

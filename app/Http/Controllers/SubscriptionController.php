@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\InvoiceMail;
+use App\Mail\SubscriptionPurchaseMail;
 use App\Models\PackageManager;
 use App\Models\Pricing;
 use Illuminate\Http\Request;
@@ -9,6 +11,7 @@ use App\Models\Subscription;
 use Inertia\Inertia;
 use Laravel\Cashier\Cashier;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class SubscriptionController extends Controller
 {
@@ -126,6 +129,12 @@ class SubscriptionController extends Controller
                         'last_checked' => now(),
                     ]);
                 }
+
+
+                Mail::to($request->email)->send(new SubscriptionPurchaseMail($session->customer_details->name, $session->customer_details->email, $price->title, $session->invoice));
+
+                Mail::to($request->email)->send(new InvoiceMail($session->customer_details->name, $session->customer_details->email, $price->title, $session->amount_total / 100, $session->currency,  $session->invoice, $endsAt, $session->status, $session->payment_method_types[0] ?? null));
+
             } else {
                 Log::error('Order not found for ID: ' . $orderId);
             }

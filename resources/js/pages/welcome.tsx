@@ -1,11 +1,11 @@
 import { Head, Link, usePage } from '@inertiajs/react';
 import NewsletterSection from '@/components/shared/newsletterSection';
 import Pricing from '@/components/shared/pricing';
-import AccordionV1 from '../src/components/AccordionV1';
 import Counter from '../src/components/Counter';
 import Footer2 from '../src/layouts/footer/Footer-2';
 import Header2 from '../src/layouts/headers/Header2';
 import Layouts from '../src/layouts/Layouts';
+import FaqSection from '@/components/shared/faqSection';
 
 export default function Welcome() {
     return (
@@ -108,7 +108,7 @@ export default function Welcome() {
                             <div className="col-xl-5 col-lg-6 col-md-10">
                                 <div className="about-text">
                                     <div className="common-heading tagline-boxed-two title-line line-less-bottom m-b-40">
-                                        <span className="tagline">About Landio</span>
+                                        <span className="tagline">About ReHostX</span>
                                         <h2 className="title">
                                         We Keep Your{' '}
                                             <span>
@@ -274,33 +274,7 @@ export default function Welcome() {
                     <NewsletterSection />
                     {/* <!--====== End SEO score box ======--> */}
                     {/* <!--====== Start FAQ section ======--> */}
-                    <section className="faq-section bg-soft-grey-color">
-                        <div className="container">
-                            <div className="row align-items-center justify-content-center">
-                                <div className="col-lg-6 col-md-10">
-                                    <div className="faq-content p-r-60 p-r-lg-30 p-r-md-0">
-                                        <div className="common-heading tagline-boxed-two title-line m-b-80">
-                                            <span className="tagline">Our Approach</span>
-                                            <h2 className="title">
-                                                Grow Your Business With Our SEO{' '}
-                                                <span>
-                                                    Agency <img src="assets/img/particle/title-line.png" alt="Line" />
-                                                </span>
-                                            </h2>
-                                        </div>
-                                        <div className="landio-accordion-v1">
-                                            <AccordionV1 />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-9">
-                                    <div className="faq-image text-lg-right m-t-md-60">
-                                        <img src="assets/img/faq/faq-image.png" alt="faq image" className="animate-float-bob-y" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <FaqSection/>
                     {/* <!--====== End Faq With SEO score box ======--> */}
                 </div>
                 {/* <!--====== End FAQ section ======--> */}
